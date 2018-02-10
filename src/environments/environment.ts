@@ -7,4 +7,4 @@ export const environment = {
   production: false
 };
 
-export const BASE_URL = 'http://numbersapi.com';
+export const BASE_URL = 'https://api.genderize.io/?name';

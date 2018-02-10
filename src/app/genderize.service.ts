@@ -13,12 +13,12 @@ export class GenderizeService {
   constructor(private http: Http ) { }
 
 
-  public GetHttp(num:number): Observable<any>
+  public GetHttp(nickName:string): Observable<any>
   {
-    const url =`${BASE_URL}/${num}`;
+    const url =`${BASE_URL}=${nickName}`;
     console.log(url);
     return this.http.get(url)
-      //.map(resp=>resp.json());
+      .map(resp=>resp.json());
   }
 
 }
